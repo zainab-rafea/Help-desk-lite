@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "helpdesk-lite",
   "version": "1.0.0",
@@ -17,3 +18,24 @@
     "sqlite3": "^5.1.7"
   }
 }
+=======
+{
+  "name": "helpdesk-lite",
+  "version": "1.0.0",
+  "description": "HelpDesk Lite — internal support ticketing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["helpdesk", "ticketing"],
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-session": "^1.18.0",
+    "sqlite3": "^5.1.7"
+  }
+}
+>>>>>>> 0c99c86c531c6a5f89428334c3ae2645a1e76ea4

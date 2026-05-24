@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 node_modules/
 database/*.db
 .env
 *.log
+=======
+node_modules/
+database/*.db
+.env
+*.log
+>>>>>>> 0c99c86c531c6a5f89428334c3ae2645a1e76ea4
