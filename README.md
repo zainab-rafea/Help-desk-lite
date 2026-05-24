@@ -2,6 +2,14 @@
 
 Lightweight internal support ticketing app built with Express, SQLite, and vanilla HTML/CSS/JS.
 
+HelpDesk Lite is a lightweight internal support ticketing system designed to help companies manage employee service requests in a more organized and efficient way. Instead of handling issues through scattered emails, chat messages, or informal follow-ups, the system centralizes all requests into one structured platform.
+
+The main goal of HelpDesk Lite is to improve request tracking, ownership, communication, and resolution visibility. Employees can submit tickets, support staff can manage and update requests, and managers can monitor workloads and unresolved issues through dashboards and status tracking.
+
+The system focuses on simplicity and usability rather than building a large enterprise solution. Version 1 mainly includes core features such as ticket creation, assignment, status management, comments, notifications, and basic reporting to ensure teams can adopt the system quickly with minimal complexity.
+
+This is an individual project a part of software enjineering and product management. the project is developed by the help of cursor ai tool and applied many concepts like scrum plan and jira usage.
+
 ## Project structure
 
 ```plaintext
@@ -87,3 +95,8 @@ npm start
 ## Assignment docs
 
 Day 1–2 planning documents remain in `day1/` and `day2/`.
+
+
+
+
+
