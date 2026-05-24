@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-title="registerTitle">Register — HelpDesk Lite</title>
+  <script src="/js/lang-init.js"></script>
+  <script src="/js/theme-init.js"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="auth-page">
+  <div class="page-controls">
+    <button type="button" class="lang-toggle" data-i18n-aria="langToggle">
+      <span class="lang-en">EN</span><span class="lang-sep">|</span><span class="lang-ar">عربي</span>
+    </button>
+    <button type="button" class="theme-toggle" data-i18n-aria="themeToggle">
+      <span class="theme-toggle-icons" aria-hidden="true"><span class="icon-sun">☀</span><span class="icon-moon">☽</span></span>
+      <span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span>
+      <span class="theme-toggle-label">Dark</span>
+    </button>
+  </div>
+  <div class="auth-card">
+    <h1 data-i18n="createAccount">Create account</h1>
+    <p class="subtitle" data-i18n="joinSubtitle">Join HelpDesk Lite</p>
+    <div id="alert" class="alert alert-error hidden"></div>
+    <form id="register-form">
+      <div class="form-group">
+        <label for="name" data-i18n="fullName">Full name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" data-i18n="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="password" data-i18n="password">Password</label>
+        <input type="password" id="password" name="password" required minlength="6" autocomplete="new-password">
+      </div>
+      <div class="form-group">
+        <label for="role" data-i18n="role">Role</label>
+        <select id="role" name="role">
+          <option value="requester" data-i18n="roleRequester">Requester (employee)</option>
+          <option value="handler" data-i18n="roleHandler">Handler (support staff)</option>
+          <option value="manager" data-i18n="roleManager">Manager</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary" data-i18n="register">Register</button>
+    </form>
+    <p class="auth-footer">
+      <span data-i18n="hasAccount">Already have an account?</span> <a href="/login.html" data-i18n="signIn">Sign in</a>
+    </p>
+  </div>
+  <script src="/js/api.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/theme.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n-title="loginTitle">Login — HelpDesk Lite</title>
+  <script src="/js/lang-init.js"></script>
+  <script src="/js/theme-init.js"></script>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="auth-page">
+  <div class="page-controls">
+    <button type="button" class="lang-toggle" data-i18n-aria="langToggle">
+      <span class="lang-en">EN</span><span class="lang-sep">|</span><span class="lang-ar">عربي</span>
+    </button>
+    <button type="button" class="theme-toggle" data-i18n-aria="themeToggle">
+      <span class="theme-toggle-icons" aria-hidden="true"><span class="icon-sun">☀</span><span class="icon-moon">☽</span></span>
+      <span class="theme-toggle-track"><span class="theme-toggle-thumb"></span></span>
+      <span class="theme-toggle-label">Dark</span>
+    </button>
+  </div>
+  <div class="auth-card">
+    <h1 data-i18n="appName">HelpDesk Lite</h1>
+    <p class="subtitle" data-i18n="signInSubtitle">Sign in to your workspace</p>
+    <div id="alert" class="alert alert-error hidden"></div>
+    <form id="login-form">
+      <div class="form-group">
+        <label for="email" data-i18n="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="password" data-i18n="password">Password</label>
+        <input type="password" id="password" name="password" required autocomplete="current-password">
+      </div>
+      <button type="submit" class="btn btn-primary" data-i18n="signIn">Sign in</button>
+    </form>
+    <p class="auth-footer">
+      <span data-i18n="noAccount">No account?</span> <a href="/register.html" data-i18n="register">Register</a>
+    </p>
+    <p class="auth-footer demo-footer">
+      <span data-i18n="demoHint">Demo: manager@company.com / handler@company.com / employee@company.com</span><br>
+      <span data-i18n="demoPassword">Password:</span> <code>password123</code>
+    </p>
+  </div>
+  <script src="/js/api.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/theme.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
